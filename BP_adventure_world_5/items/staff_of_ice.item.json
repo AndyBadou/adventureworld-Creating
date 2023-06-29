@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "adventureworld:staff_of_ice",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+            "minecraft:damage": 1,
+            "minecraft:can_destroy_in_creative": false,
+
+            "minecraft:weapon": {  },
+            "minecraft:display_name": { "value": "item.adventureworld:staff_of_ice.name" },
+            "minecraft:icon": { "texture": "staff_of_ice" },
+            "minecraft:max_stack_size": 1,
+            "minecraft:foil": true,
+            "minecraft:hand_equipped": true,
+            "minecraft:on_use": { "on_use": { "event": "throw_ice_crystal" } }
+        },
+        "events": {
+            "throw_ice_crystal": {
+                "shoot": { "projectile": "adventureworld:ice_crystal", "launch_power": 1.0 }
+            }
+        }
+    }
+}

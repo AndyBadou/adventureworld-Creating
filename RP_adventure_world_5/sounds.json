@@ -1,0 +1,39 @@
+{
+    "block_sounds": {
+        "aw_pot": {
+            "events": {
+                "break": {
+                    "sound": "blocks.pot.break",
+                    "pitch": 1.0,
+                    "volume": 1.0
+                },
+                "place": {
+                    "sound": "blocks.pot.break",
+                    "pitch": 1.0,
+                    "volume": 1.0
+                },
+                "item.use.on": {
+                    "sound": "blocks.pot.step",
+                    "pitch": 1.0,
+                    "volume": 1.0
+                },
+                "default": "",
+                "hit": {
+                    "sound": "blocks.pot.step",
+                    "pitch": 1.0,
+                    "volume": 1.0
+                },
+                "power.off" : {
+                   "pitch" : 0.50,
+                   "sound" : "block.click"
+                },
+                "power.on" : {
+                   "pitch" : 0.60,
+                   "sound" : "block.click"
+                }
+            },
+            "pitch": 1.0,
+            "volume": 1.0
+        }
+    }
+}

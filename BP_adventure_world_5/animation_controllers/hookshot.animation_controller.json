@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.hookshot.kill_self": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "kill_self": "query.variant == 1" }
+                    ]
+                },
+                "kill_self": {
+                    "on_entry": [
+                        "/function entities/hookshot/kill_self"
+                    ]
+                }
+            }
+        }
+    }
+}

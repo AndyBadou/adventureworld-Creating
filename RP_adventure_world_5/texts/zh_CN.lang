@@ -1,0 +1,29 @@
+## 下面为Addon专属内容的键文本翻译。作者 一只卑微的量筒。 
+
+### 物品类
+item.adventureworld:regeneration_heart.name=恢复之心
+item.adventureworld:wild_sword.name=旷野之剑
+item.adventureworld:staff_of_flame.name=火之杖
+item.adventureworld:staff_of_ice.name=冰之杖
+item.adventureworld:hookshot.name=绳枪
+item.adventureworld:bomb.name=炸弹
+
+### 实体类
+entity.adventureworld:npc.name=NPC
+entity.adventureworld:npc_netease.name=NPC (Netease Version)
+entity.adventureworld:text_display.name=展示文本
+entity.adventureworld:marker.name=标记
+entity.adventureworld:ice_crystal.name=冰晶
+entity.adventureworld:hookshot.name=绳枪
+entity.adventureworld:bomb.name=炸弹
+
+### Blocks
+tile.adventureworld:pot.name=陶罐
+
+### Spawn Eggs
+item.spawn_egg.entity.adventureworld:npc.name=NPC 刷怪蛋
+item.spawn_egg.entity.adventureworld:npc_netease.name=NPC (Netease Version) 刷怪蛋
+item.spawn_egg.entity.adventureworld:text_display.name=展示文本 刷怪蛋
+
+### Text Translations
+action.interact.chat=聊天

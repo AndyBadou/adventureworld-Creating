@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bomb.expand": {
+			"animation_length": 6.5,
+			"bones": {
+				"tnt_body": {
+					"scale": {
+						"5.0": [1, 1, 1],
+						"5.75": [1.25, 1.25, 1.25]
+					}
+				}
+			}
+		}
+	}
+}

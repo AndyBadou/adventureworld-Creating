@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "adventureworld:ice_crystal",
+            "materials": { "default": "snowball" },
+            "textures": { "default": "textures/new_entities/ice_crystal" },
+            "geometry": { "default": "geometry.item_sprite" },
+            "render_controllers": [ "controller.render.item_sprite" ],
+            "scripts": {
+                "animate": [ "flying" ]
+            },
+            "animations": {
+                "flying": "animation.actor.billboard"
+            }
+        }
+    }
+}

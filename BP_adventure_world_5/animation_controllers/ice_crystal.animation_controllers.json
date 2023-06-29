@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.ice_crystal.douse_fire": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "douse_fire": "query.variant == 1" }
+                    ]
+                },
+                "douse_fire": {
+                    "on_entry": [
+                        "/function entities/ice_crystal/douse_fire"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "adventureworld:hookshot",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:snowball",
+            "scripts": { "animate": [ "controller_kill_self" ] },
+            "animations": { "controller_kill_self": "controller.animation.hookshot.kill_self" }
+        },
+        "components": {
+            "minecraft:collision_box": { "height": 0.25, "width": 0.25 },
+            "minecraft:physics": { },
+            "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+            "minecraft:conditional_bandwidth_optimization": {
+                "default_values": {
+                    "max_optimized_distance": 100.0,
+                    "max_dropped_ticks": 7,
+                    "use_motion_prediction_hints": true
+                }
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "remove_on_hit": { }
+                },
+                "anchor": 1,
+                "power": 1.0,
+                "gravity": 0.0,
+                "angle_offset": 0.0,
+                "offset": [ 0, -0.1, 0 ]
+            },
+            "minecraft:timer": {
+                "time": 5,
+                "time_down_event": {
+                    "event": "kill_self",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "kill_self": {
+                "add": { "component_groups": [ "kill_self" ] }
+            }
+        },
+        "component_groups": {
+            "kill_self": {
+                "minecraft:variant": { "value": 1 }
+            }
+        }
+    }
+}

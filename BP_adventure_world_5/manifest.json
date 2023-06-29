@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Behavior Pack of Adventure World 5",
+        "min_engine_version": [ 1, 18, 30 ],
+        "name": "Behavior Pack of Adventure World 5",
+        "uuid": "0b4cba00-d0e4-470b-93a0-bdd50e7ccac5",
+        "version": [ 1, 0, 5 ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "23377331-0a7e-441d-bc38-c5e223118aed",
+            "version": [ 1, 0, 0 ]
+        }
+    ]
+}

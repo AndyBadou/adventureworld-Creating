@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.bomb": {
+            "geometry": "geometry.default",
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "textures": [ "array.texture[v.is_lit]" ],
+            "arrays": {
+                "textures": {
+                    "array.texture": [
+                        "texture.default",
+                        "texture.lit"
+                    ]
+                }
+            }
+        }
+    }
+}

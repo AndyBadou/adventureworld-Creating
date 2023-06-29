@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "adventureworld:hookshot",
+            "materials": { "default": "snowball" },
+            "textures": { "default": "textures/new_entities/hookshot_entity" },
+            "geometry": { "default": "geometry.item_sprite" },
+            "render_controllers": [ "controller.render.item_sprite" ],
+            "scripts": {
+                "animate": [ "flying" ]
+            },
+            "animations": {
+                "flying": "animation.actor.billboard"
+            }
+        }
+    }
+}
