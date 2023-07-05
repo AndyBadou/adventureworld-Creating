@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "adventureworld:bomb",
+
+            "render_controllers": [ "controller.render.bomb" ],
+            "geometry": { "default": "geometry.bomb" },
+            "textures": {
+                "default": "textures/new_entities/bomb",
+                "lit": "textures/new_entities/bomb_lit"
+            },
+            "materials": { "default": "entity_alphatest" },
+            
+            "scripts": {
+                "initialize": [
+                    "v.is_lit=0;",
+                    "v.is_lit_interval_time=0;",
+                    "v.lit_times=0;"
+                ],
+                "pre_animation": [
+                    "v.is_lit = ( v.is_lit == 2 ) ? 0 : (v.is_lit) ;",
+                    "v.is_lit_interval_time = v.is_lit_interval_time + 1;",
+                    "v.is_lit = (v.is_lit_interval_time >= (v.lit_times >= 20 ? 5 : 10) ) ? (v.is_lit + 1) : (v.is_lit) ;",
+                    "v.lit_times = (v.is_lit_interval_time >= (v.lit_times >= 20 ? 5 : 10) ) ? (v.lit_times + 1) : (v.lit_times) ;",
+                    "v.is_lit_interval_time = (v.is_lit_interval_time >= (v.lit_times >= 20 ? 5 : 10) ) ? 0 : (v.is_lit_interval_time);"
+                ],
+                "animate": [
+                    "expand"
+                ]
+            },
+            "animations": {
+                "expand": "animation.bomb.expand"
+            }
+        }
+    }
+}

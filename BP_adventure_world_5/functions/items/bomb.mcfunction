@@ -1,0 +1,1 @@
+playsound random.fuse @a

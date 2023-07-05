@@ -1,0 +1,47 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "adventureworld:ice_crystal",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:snowball",
+            "scripts": { "animate": [ "controller_douse_fire" ] },
+            "animations": { "controller_douse_fire": "controller.animation.ice_crystal.douse_fire" }
+        },
+        "components": {
+            "minecraft:collision_box": { "height": 0.25, "width": 0.25 },
+            "minecraft:physics": { },
+            "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+            "minecraft:conditional_bandwidth_optimization": {
+                "default_values": {
+                    "max_dropped_ticks": 5,
+                    "max_optimized_distance": 80.0,
+                    "use_motion_prediction_hints": true
+                }
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "definition_event": { "event_trigger": { "event": "douse_fire", "target": "self" } }
+                },
+                "power": 0.5,
+                "gravity": 0.05,
+                "angle_offset": -20.0,
+                "hit_sound": "glass"
+            }
+        },
+        "events": {
+            "douse_fire": {
+                "add": {
+                    "component_groups": [ "douse_fire" ]
+                }
+            }
+        },
+        "component_groups": {
+            "douse_fire": {
+                "minecraft:variant": { "value": 1 }
+            }
+        }
+    }
+}

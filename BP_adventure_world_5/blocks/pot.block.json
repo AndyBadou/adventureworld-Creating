@@ -1,0 +1,26 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "adventureworld:pot"
+        },
+        "components": {
+            "minecraft:geometry": "geometry.pot",
+            "minecraft:block_collision": { "origin": [ -7.0, 0.0, -7.0 ], "size": [ 14.0, 16.0, 14.0 ] },
+            "minecraft:aim_collision": { "origin": [ -7.0, 0.0, -7.0 ], "size": [ 14.0, 16.0, 14.0 ] },
+            "minecraft:destroy_time": 0.0,
+            "minecraft:explosion_resistance": 0.0,
+            "minecraft:display_name": "adventureworld:pot",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "aw_pot",
+                    "ambient_occlusion": false,
+                    "face_dimming": true
+                }
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_filter": 0.0,
+            "minecraft:loot": "loot_tables/blocks/pot.loot_table.json"
+        }
+    }
+}

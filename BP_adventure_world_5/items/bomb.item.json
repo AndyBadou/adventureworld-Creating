@@ -1,0 +1,20 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "adventureworld:bomb"
+        },
+
+        "components": {
+            "minecraft:entity_placer": { "entity": "adventureworld:bomb" },
+            "minecraft:icon": { "texture": "bomb" },
+            "minecraft:display_name": { "value": "item.adventureworld:bomb.name" },
+            "minecraft:on_use_on": { "on_use_on": { "event": "playsound", "target": "self" } }
+        },
+        "events": {
+            "playsound": {
+                "run_command": { "command": [ "function items/bomb" ] }
+            }
+        }
+    }
+}

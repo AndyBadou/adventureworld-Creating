@@ -1,0 +1,27 @@
+## Below are key text translations of exclusive content of Addon. By YZBWDLT. 
+
+### Items
+item.adventureworld:regeneration_heart.name=Regeneration Heart
+item.adventureworld:wild_sword.name=Wild Sword
+item.adventureworld:staff_of_flame.name=Staff of Flame
+item.adventureworld:staff_of_ice.name=Staff of Ice
+item.adventureworld:hookshot.name=Hookshot
+
+### Entities
+entity.adventureworld:npc.name=NPC
+entity.adventureworld:npc_netease.name=NPC (Netease Version)
+entity.adventureworld:text_display.name=Floating Text
+entity.adventureworld:marker.name=Marker
+entity.adventureworld:ice_crystal.name=Ice Crystal
+entity.adventureworld:hookshot.name=Hookshot
+
+### Blocks
+tile.adventureworld:pot.name=Pot
+
+### Spawn Eggs
+item.spawn_egg.entity.adventureworld:npc.name=Spawn NPC
+item.spawn_egg.entity.adventureworld:npc_netease.name=Spawn NPC (Netease Version)
+item.spawn_egg.entity.adventureworld:text_display.name=Spawn Floating Text
+
+### Text Translations
+action.interact.chat=Chat

@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "regeneration_heart": { "textures": "textures/new_items/regeneration_heart" },
+        "hookshot": { "textures": "textures/new_items/hookshot" },
+        "wild_sword": { "textures": "textures/new_items/wild_sword" },
+        "staff_of_ice": { "textures": "textures/new_items/staff_of_ice" },
+        "staff_of_flame": { "textures": "textures/new_items/staff_of_flame" },
+        "bomb": { "textures": "textures/new_items/bomb" }
+    }
+}
