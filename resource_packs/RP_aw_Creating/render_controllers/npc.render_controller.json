@@ -1,0 +1,30 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.aw_npc": {
+            "geometry": "array.models[query.variant]",
+            "materials": [ { "*": "material.default" } ],
+            "textures": [ "array.skins[query.variant]" ],
+            "arrays": {
+                "textures": {
+                    "array.skins": [
+                        "texture.Tian_Ping",
+                        "texture.Wang_Yufan",
+                        "texture.Hu_Yu",
+                        "texture.Lu_Qianli",
+                        "texture.Li_Hepeng"
+                    ]
+                },
+                "geometries": {
+                    "array.models": [
+                        "geometry.male",
+                        "geometry.male",
+                        "geometry.female",
+                        "geometry.female",
+                        "geometry.female"
+                    ]
+                }
+            }
+        }
+    }
+}

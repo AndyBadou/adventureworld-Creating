@@ -1,0 +1,1 @@
+enchant @a[hasitem={item=adventureworld:staff_of_flame}] fire_aspect 2

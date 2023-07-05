@@ -1,0 +1,76 @@
+{
+    "format_version": "1.17.20",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "minecraft:zombie",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "minecraft:zombie_baby": {
+                "minecraft:is_baby": {},
+                "minecraft:scale": { "value": 0.5 },
+                "minecraft:movement": { "value": 0.35 }
+            },
+            "minecraft:zombie_adult": {
+                "minecraft:movement": { "value": 0.23 },
+                "minecraft:behavior.mount_pathing": { "priority": 2, "speed_multiplier": 1.25, "target_dist": 0.0, "track_target": true }
+            }
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": { },
+            "minecraft:nameable": { },
+            "minecraft:type_family": { "family": [ "zombie", "undead", "monster", "mob" ] },
+            "minecraft:equip_item": { },
+            "minecraft:collision_box": { "width": 0.6, "height": 1.9 },
+            "minecraft:movement.basic": { },
+            "minecraft:navigation.walk": {"is_amphibious": true,"can_pass_doors": true,"can_walk": true },
+            "minecraft:jump.static": { },
+            "minecraft:can_climb": { },
+            "minecraft:health": { "value": 18, "max": 18 },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+                        "cause": "lava",
+                        "damage_per_tick": 999
+                    }
+                ]
+            },
+            "minecraft:breathable": { "total_supply": 0, "suffocate_time": 0, "breathes_air": true, "breathes_water": true },
+            "minecraft:attack": { "damage": 1 },
+            "minecraft:loot": { "table": "loot_tables/entities/zombie.json" },
+            "minecraft:behavior.equip_item": { "priority": 2 },
+            "minecraft:behavior.melee_attack": { "priority": 3 },
+            "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 1 },
+            "minecraft:behavior.look_at_player": { "priority": 8, "look_distance": 6, "probability": 0.02 },
+            "minecraft:behavior.random_look_around": { "priority": 9 },
+            "minecraft:behavior.hurt_by_target": { "priority": 1 },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": true,
+                "reselect_targets": true,
+                "within_radius": 25.0,
+                "must_see_forget_duration": 17.0,
+                "entity_types": [
+                    {
+                        "filters": { "test": "is_family", "subject": "other", "value": "player" },
+                        "max_dist": 35
+                    }
+                ]
+            },
+            "minecraft:physics": { },
+            "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+            "minecraft:conditional_bandwidth_optimization": { }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": { "component_groups": [ "minecraft:zombie_adult" ] }
+            },
+            "minecraft:as_baby": {
+                "add": { "component_groups": [ "minecraft:zombie_baby" ] }
+            }
+        }
+    }
+}

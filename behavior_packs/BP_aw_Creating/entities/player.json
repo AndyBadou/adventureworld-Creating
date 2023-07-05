@@ -1,0 +1,160 @@
+{
+	"format_version": "1.18.20",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+
+		"components": {
+			"minecraft:physics": { },
+			"minecraft:type_family": { "family": [ "player" ] },
+			"minecraft:collision_box": { "width": 0.6, "height": 1.8 },
+			"minecraft:nameable": { "always_show": true, "allow_name_tag_renaming": false },
+			"minecraft:pushable": { "is_pushable": false, "is_pushable_by_piston": true },
+
+            "minecraft:loot": { "table": "loot_tables/empty.json" },
+
+            "minecraft:attack": { "damage": 1 },
+			"minecraft:breathable": { "total_supply": 120, "suffocate_time": -1, "inhale_time": 10, "generates_bubbles": false },
+			"minecraft:is_hidden_when_invisible": { },
+
+            "minecraft:movement": { "value": 0.1 },
+			"minecraft:can_climb": { },
+			"minecraft:block_climber": { },
+
+            "minecraft:player.saturation": { "value": 5, "max": 20 },
+			"minecraft:player.exhaustion": { "value": 0, "max": 20 },
+
+            "minecraft:conditional_bandwidth_optimization": { },
+			"minecraft:exhaustion_values": { "heal": 6, "jump": 0.05, "sprint_jump": 0.2, "mine": 0.005, "attack": 0.1, "damage": 0.1, "walk": 0.0, "sprint": 0.01, "swim": 0.01 },
+
+            "minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			}
+		},
+
+		"events": {
+            "max_health_6": {
+                "add": { "component_groups": [ "max_health_6" ] }
+            },
+            "max_health_8": {
+                "add": { "component_groups": [ "max_health_8" ] }
+            },
+            "max_health_10": {
+                "add": { "component_groups": [ "max_health_10" ] }
+            },
+            "max_health_12": {
+                "add": { "component_groups": [ "max_health_12" ] }
+            },
+            "max_health_14": {
+                "add": { "component_groups": [ "max_health_14" ] }
+            },
+            "max_health_16": {
+                "add": { "component_groups": [ "max_health_16" ] }
+            },
+            "max_health_18": {
+                "add": { "component_groups": [ "max_health_18" ] }
+            },
+            "max_health_20": {
+                "add": { "component_groups": [ "max_health_20" ] }
+            },
+            "max_health_22": {
+                "add": { "component_groups": [ "max_health_22" ] }
+            },
+            "max_health_24": {
+                "add": { "component_groups": [ "max_health_24" ] }
+            },
+            "max_health_26": {
+                "add": { "component_groups": [ "max_health_26" ] }
+            },
+            "max_health_28": {
+                "add": { "component_groups": [ "max_health_28" ] }
+            },
+            "max_health_30": {
+                "add": { "component_groups": [ "max_health_30" ] }
+            },
+            "max_health_32": {
+                "add": { "component_groups": [ "max_health_32" ] }
+            },
+            "max_health_34": {
+                "add": { "component_groups": [ "max_health_34" ] }
+            },
+            "max_health_36": {
+                "add": { "component_groups": [ "max_health_36" ] }
+            },
+            "max_health_38": {
+                "add": { "component_groups": [ "max_health_38" ] }
+            },
+            "max_health_40": {
+                "add": { "component_groups": [ "max_health_40" ] }
+            }
+
+		},
+
+		"component_groups": {
+            "max_health_6": {
+                "minecraft:health": { "max": 6 }
+            },
+            "max_health_8": {
+                "minecraft:health": { "max": 8 }
+            },
+            "max_health_10": {
+                "minecraft:health": { "max": 10 }
+            },
+            "max_health_12": {
+                "minecraft:health": { "max": 12 }
+            },
+            "max_health_14": {
+                "minecraft:health": { "max": 14 }
+            },
+            "max_health_16": {
+                "minecraft:health": { "max": 16 }
+            },
+            "max_health_18": {
+                "minecraft:health": { "max": 18 }
+            },
+            "max_health_20": {
+                "minecraft:health": { "max": 20 }
+            },
+            "max_health_22": {
+                "minecraft:health": { "max": 22 }
+            },
+            "max_health_24": {
+                "minecraft:health": { "max": 24 }
+            },
+            "max_health_26": {
+                "minecraft:health": { "max": 26 }
+            },
+            "max_health_28": {
+                "minecraft:health": { "max": 28 }
+            },
+            "max_health_30": {
+                "minecraft:health": { "max": 30 }
+            },
+            "max_health_32": {
+                "minecraft:health": { "max": 32 }
+            },
+            "max_health_34": {
+                "minecraft:health": { "max": 34 }
+            },
+            "max_health_36": {
+                "minecraft:health": { "max": 36 }
+            },
+            "max_health_38": {
+                "minecraft:health": { "max": 38 }
+            },
+            "max_health_40": {
+                "minecraft:health": { "max": 40 }
+            }
+		}
+	}
+}

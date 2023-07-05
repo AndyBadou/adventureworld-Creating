@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "adventureworld:npc_netease",
+            "materials": { "default": "entity_alphatest" },
+            "textures": {
+                "Tian_Ping": "textures/new_entities/npc/Tian_Ping",
+                "Wang_Yufan": "textures/new_entities/npc/Wang_Yufan",
+                "Hu_Yu": "textures/new_entities/npc/Hu_Yu",
+                "Lu_Qianli": "textures/new_entities/npc/Lu_Qianli",
+                "Li_Hepeng": "textures/new_entities/npc/Li_Hepeng"
+            },
+            "geometry": {
+                "male": "geometry.manikin_male",
+                "female": "geometry.manikin_female"
+            },
+            "render_controllers": [ "controller.render.aw_npc" ],
+            "spawn_egg": { "base_color": "#e8b211", "overlay_color": "#47f118" },
+            "animations": {
+                "bob": "animation.player.bob"
+            },
+            "scripts": {
+                "scale": "0.9375",
+                "animate": [
+                    "bob"
+                ]
+            }
+        }
+    }
+}

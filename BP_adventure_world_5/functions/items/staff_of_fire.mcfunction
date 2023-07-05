@@ -1,1 +1,0 @@
-enchant @a[hasitem={item=adventureworld:staff_of_flame,location=slot.weapon.mainhand}] fire_aspect 2

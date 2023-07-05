@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "冒险世界：筑梦 行为包",
+        "description": "需搭配资源包使用",
+        "uuid": "0b4cba00-d0e4-470b-93a0-bdd50e7ccac5",
+        "min_engine_version": [ 1, 18, 30 ],
+        "version": [ 1, 0, 5 ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "23377331-0a7e-441d-bc38-c5e223118aed",
+            "version": [ 1, 0, 0 ]
+        }
+    ]
+}
